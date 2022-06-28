@@ -1,0 +1,12 @@
+<div class="p-5 m-5 text-danger d-flex flex-column">
+  <a [routerLink]="[firstPath, { id: 5 }]" routerLinkActive="active" [queryParams]="{name: 'first'}">First Component</a>
+  <a (click)="goToFirstComponent()">First Component (from code)</a>
+  <a routerLink="/second-component/someId" routerLinkActive="active">Second Component</a>
+  <a (click)="goToSecondComponent()">Second Component (from code)</a>
+  <a routerLink="first-component/child-a">Child A</a>
+  <a routerLink="users">Users</a>
+</div>
+<router-outlet></router-outlet>
+<div class="p-5 m-5 text-success">
+  Inside App Component
+</div>

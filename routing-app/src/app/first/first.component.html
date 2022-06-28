@@ -1,0 +1,9 @@
+<p>first works!</p>
+<div class="p-5 m-5 text-danger d-flex flex-column">
+    <a routerLink="./child-a">Child A</a>
+    <a (click)="goToChildA()">Child A</a>
+    <a routerLink="child-b">Child B</a>
+    <a routerLink="../second-component/id">Second</a>
+    <a (click)="goToThird()">Third</a>
+</div>
+<router-outlet></router-outlet>
